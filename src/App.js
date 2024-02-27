@@ -6,13 +6,13 @@ import { useRef, useState } from 'react';
 
 function App() {
   const [displayList, setdisplayList] = useState([]);
-  const edt_inputref = useRef(null);
+  // const edt_inputref = useRef(null);
 
   function Add_Tolist(indataList) {
     debugger
     if(indataList !== ""){
     setdisplayList([...displayList,indataList])
-      edt_inputref.current.focus();
+      // edt_inputref.current.focus();
     }
   }
 
@@ -27,7 +27,9 @@ function App() {
     <hr/>
       <div className='main-container'>
         <div className='center-container'>
-          <Todoinputs ref={edt_inputref} Add_Tolist={Add_Tolist}/>
+          <Todoinputs 
+          // ref={edt_inputref} 
+          Add_Tolist={Add_Tolist}/>
           <h2>Task List</h2>
           <hr/>
           <div style={{ backgroundColor:"lightgray", height:"50vh", width:"350px", padding:"10px"}}>

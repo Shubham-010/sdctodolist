@@ -10,7 +10,9 @@ export default function Todoinputs(props) {
     }
     return (                                      
         <div class="input-group mb-3">
-            <input type="text" ref={inputref} value={inputText} class="form-control" placeholder="Enter Your Task" aria-describedby="button-addon2" onKeyDown={handleEnterPress} onChange={(e) => setinputText(e.target.value)}></input>
+            <input type="text" 
+            // ref={inputref} 
+            value={inputText} class="form-control" placeholder="Enter Your Task" aria-describedby="button-addon2" onKeyDown={handleEnterPress} onChange={(e) => setinputText(e.target.value)}></input>
             <button class="btn btn-outline-primary" type="button" id="button-addon1" onClick={() => { debugger; props.Add_Tolist(inputText); setinputText("") }}>+</button>
         </div>
     )
