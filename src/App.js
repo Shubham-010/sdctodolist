@@ -31,16 +31,16 @@ function App() {
   }
   return (
     <div className="App">
+      {/* <hr /> */}
       <h2 style={{ background: "black", color: "white" }}>TO DO LIST <span><img width='25' height='25' src='list.png'></img></span></h2>
-      <hr />
-      <div className='main-container'>
-        <div className='center-container'>
+      <div className='main-container '>
+        <div className='center-container '>
           <Todoinputs
             ref={handleRef}
             Add_Tolist={Add_Tolist} />
-          <h2>Task List</h2>
-          <hr />
-          <div style={{ backgroundColor: "lightgray", height: "50vh", width: "350px", padding: "10px" }}>
+          <div style={{ backgroundColor: "#7FC7D9" }}><h4>Task List</h4></div>
+          {/* <hr /> */}
+          <div className='display-board '>
             {displayList.map((listitem, i) => {
               return (
                 <Todolistdis key={i} item={listitem} deleteItem={deleteItem} index={i} />

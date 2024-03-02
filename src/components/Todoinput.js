@@ -21,7 +21,7 @@ const Todoinputs = forwardRef((props, ref)=> {
             <input type="text"
                 ref={ref}
                 value={inputText}
-                class="form-control"
+                class="form-control "
                 placeholder="Enter Your Task"
                 aria-describedby="button-addon2"
                 onKeyDown={handleEnterPress}

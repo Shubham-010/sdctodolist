@@ -3,12 +3,14 @@ import React from "react";
 
 export default function Todolistdis(props) {
     return (
-        <ul class="list-group">
+        <ul class="list-group pd-2">
             <li class="list-group-item">
-                {props.item}
-                <span className="icons" style={{ marginLeft: "200px" }}>
-                    <i className="fa-solid fa-trash" onClick={(e) => { debugger; props.deleteItem(props.index, 1) }}></i>
-                </span>
+                <div className="merged-container bluebg">
+                    <div className="message-lst ">{props.item}</div>
+                    <div className="icons">
+                        <i className="fa-solid fa-trash" onClick={(e) => { debugger; props.deleteItem(props.index, 1) }}></i>
+                    </div>
+                </div>
             </li>
         </ul>
     )
