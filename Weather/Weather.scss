@@ -1,0 +1,137 @@
+.weather {
+  width: 100%;
+  border-radius: 0.3rem;
+  color: #fff;
+  background-color: var(--Gred);
+  margin: 20px auto 0 auto;
+  padding: 0 20px 20px 20px;
+  opacity: 0.9;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  color: #000;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.weather-description {
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.weather-icon {
+  width: 8rem;
+}
+
+.temprature {
+  font-weight: 600;
+  font-size: 6rem;
+  width: auto;
+  letter-spacing: -5px;
+  margin: 10px 0;
+}
+
+.details {
+  width: 100%;
+  padding-left: 1.5rem;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parameter-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.parameter-value {
+  text-align: right;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.parameter-label.top {
+  border-bottom: 1px solid #fff;
+}
+
+//TODO: CSS for ForeCast.js
+.forecast-title {
+  margin-bottom: 1.5rem;
+}
+
+.daily-item {
+  color: #fff;
+  background-color: var(--GMblack);
+  opacity: 0.9;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.ac-icon {
+  width: 3rem;
+}
+
+//* Flex 1 1 means takes size accordigly
+.day {
+  flex: 1 1;
+  margin-left: 0.3rem;
+}
+
+.description {
+  flex: 1 1;
+  margin-left: 0.3rem;
+}
+
+.min-max {
+  color: var(--Gred);
+  margin-right: 0.3rem;
+  font-weight: bold;
+}
+
+.wrap-accor-item {
+  margin: 1rem;
+}
+
+@media (max-width: 991px) {
+  .weather {
+    padding: 0rem;
+  }
+  .top {
+    padding: 1rem;
+    padding-bottom: 0rem;
+    flex-direction: column;
+  }
+  .bottom {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .details {
+    padding-left: 0rem;
+  }
+
+  .forecast-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
